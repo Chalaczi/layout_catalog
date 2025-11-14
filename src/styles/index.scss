@@ -18,7 +18,7 @@ $spacing-large: 16px;
 $star-size: 16px;
 $font-family: 'Roboto', sans-serif;
 $gap-horizontal: 48px;
-$gap-vertical: 48px;
+$gap-vertical: 46px;
 $card-width: 200px;
 $catalog-padding-vertical: 50px;
 $catalog-padding-horizontal: 40px;
@@ -47,7 +47,6 @@ body {
   align-items: center;
   padding: 0 50px;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -72,7 +71,7 @@ body {
 
 .nav__link {
   text-decoration: none;
-  color: black;
+  color: $color-text-primary;
   height: 60px;
   font-size: 12px;
   font-weight: 500;
@@ -178,7 +177,7 @@ body {
     }
   }
 
-  &__price--current {
+  &__price {
     margin: 0;
     margin-top: 24px;
     display: flex;
