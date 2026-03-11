@@ -18,11 +18,11 @@ $spacing-medium: 16px;
 $spacing-large: 16px;
 $star-size: 16px;
 $font-family: 'Roboto', sans-serif;
-$gap-horizontal: 46px;
-$gap-vertical: 48px;
+$gap-horizontal: 48px;
+$gap-vertical: 46px;
 $catalog-padding-vertical: 50px;
 $catalog-padding-horizontal: 40px;
-$transition-duration: 300ms;
+$transition-duration: 0ms;
 
 // Reset
 * {
@@ -133,7 +133,9 @@ body {
   border: $border-width solid $color-border;
   border-radius: $border-radius;
   box-sizing: border-box;
-  transition: transform $transition-duration ease, box-shadow $transition-duration ease;
+  transition:
+    transform $transition-duration ease,
+    box-shadow $transition-duration ease;
 
   &__image {
     display: block;
@@ -169,7 +171,7 @@ body {
 
     .card__meta {
       display: flex;
-      align-items: flex-end;
+      align-self: flex-start;
       margin: 0;
       font-size: 10px;
       line-height: 14px;
@@ -218,7 +220,10 @@ body {
     border: none;
     border-radius: $border-radius;
     box-sizing: border-box;
-    transition: background-color $transition-duration ease, color $transition-duration ease, border $transition-duration ease;
+    transition:
+      background-color $transition-duration ease,
+      color $transition-duration ease,
+      border $transition-duration ease;
 
     &:hover {
       color: $color-link;
